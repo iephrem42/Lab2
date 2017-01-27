@@ -12,9 +12,9 @@ class WriteFile
 	   ofstream output_file;
 	   bool closed;
    public:
-		WriteFile(const char file_name);// constructor
+		WriteFile(const char* file_name);// constructor
 		~WriteFile(); //destructor
-		void writeLine(); //active
+		void writeLine(String* line); //active
 		void close(); //active
 		void destroyWriteFile(); //active
 };
