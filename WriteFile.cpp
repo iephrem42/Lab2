@@ -24,10 +24,10 @@ void WriteFile::close()
    }
 }
 
-void WriteFile::writeLine()
+void WriteFile::writeLine(String* line)
 {
    if (!closed && length() > 0)
    {
-      output_file << getText() << endl;
+      output_file << line->getText() << endl;
    }
 }
