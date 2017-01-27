@@ -15,7 +15,7 @@ class ReadFile
 	  public:
 	  	ReadFile(const char* file_name);
 	  	~ReadFile();
-		String readLine();
+		String* readLine();
 		bool eof();
 		void close();
 

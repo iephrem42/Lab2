@@ -28,12 +28,12 @@ void ReadFile::close()
    }
 }
 
-String ReadFile::readLine()
+String* ReadFile::readLine()
 {
 
    string text;
-   rf->_eof = !(getline(rf->input_file, text));
+   _eof = !(getline(input_file, text));
 
-   String str = new String((const char*) text.c_str());
+   String* str = new String((const char*) text.c_str());
    return str;
 }
