@@ -12,6 +12,7 @@ int main()
    while(!rf->eof())
    {
       String* line = rf->readLine();
+      //cout << line->getText() << "\n";
       wf->writeLine(line);
       delete line;
    }
