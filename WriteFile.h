@@ -13,10 +13,12 @@ class WriteFile
 	   bool closed;
    public:
 		WriteFile(const char* file_name);// constructor
-		~WriteFile(); //destructor
+		//WriteFile();
+//~WriteFile(); //destructor
 		void writeLine(String* line); //active
 		void close(); //active
-		void destroyWriteFile(); //active
+		//void destroyWriteFile(); //active
+		//WriteFile* createWriteFile(const char* file_name);
 };
 /*
 WriteFile* createWriteFile(const char* file_name);
